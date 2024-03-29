@@ -16,7 +16,23 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: ,
+      home: Container(
+        color: Colors.grey[400],
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              color: Colors.blueGrey[700],
+              width: 392,
+              height: 80,
+              child: Text('YE Gestão de Saúde',
+                style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.w100, overflow: TextOverflow.clip),
+                textAlign: TextAlign.center,),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
