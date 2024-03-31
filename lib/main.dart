@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
       title: 'YE Gestão de Saúde',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
       ),
       home: Container(
         color: Colors.grey[400],
@@ -23,11 +22,13 @@ class MyApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
+              padding: const EdgeInsets.all(15),
+              margin: const EdgeInsets.fromLTRB(0, 40, 0, 0),
               color: Colors.blueGrey[700],
               width: 392,
-              height: 80,
+              height: 75,
               child: Text('YE Gestão de Saúde',
-                style: TextStyle(color: Colors.white, fontSize: 40, fontWeight: FontWeight.w100, overflow: TextOverflow.clip),
+                style: TextStyle(color: Colors.white, fontSize: 32, fontWeight: FontWeight.w100),
                 textAlign: TextAlign.center,),
             ),
           ],
@@ -36,3 +37,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
