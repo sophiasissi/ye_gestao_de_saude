@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "899755659996",
+    "project_id": "ye-gestao-de-saude-firebase",
+    "storage_bucket": "ye-gestao-de-saude-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899755659996:android:94ba01f949802aab661a19",
+        "android_client_info": {
+          "package_name": "com.example.ye_gestao_de_saude"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBykZ-MMg9fiAoojlbE26s3GIRlL_qM0JA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
