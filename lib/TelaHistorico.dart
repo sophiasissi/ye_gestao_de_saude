@@ -6,24 +6,6 @@ import 'package:path_provider/path_provider.dart';
 import 'package:googleapis/drive/v3.dart' as drive;
 import 'package:googleapis_auth/auth_io.dart';
 
-void main() {
-  runApp(HistoricoDeExamesApp());
-}
-
-class HistoricoDeExamesApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Histórico de Exames',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: TelaHistoricoDeExames(),
-    );
-  }
-}
-
 class TelaHistoricoDeExames extends StatefulWidget {
   @override
   _TelaHistoricoDeExamesState createState() => _TelaHistoricoDeExamesState();
