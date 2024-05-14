@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:ye_gestao_de_saude/_comum/cores.dart';
 
 class PesoAlturaIMC extends StatelessWidget {
@@ -15,11 +16,32 @@ class PesoAlturaIMC extends StatelessWidget {
         centerTitle: true,
         backgroundColor: CoresPrincipais.corTema,
       ),
-      body: Column(
+      body:ListView(children: [
+      Column(
         children: [
           Column( 
             children: [
               const Divider(height: 1,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                      margin: const EdgeInsets.fromLTRB(30, 0, 0, 0),
+                      height: 40, 
+                      color: Colors.white,
+                      alignment: Alignment.centerLeft,
+                      child: const Text("Data: 16/07/2020", style: TextStyle(color: CoresPrincipais.corTema, fontSize: 20, ),textAlign: TextAlign.start,)
+                      ),
+                      Container(
+                          margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
+                          alignment: Alignment.centerRight,
+                          child: const Icon(
+                            Icons.keyboard_arrow_down,
+                            color: CoresPrincipais.corTema,
+                          )),
+                ],
+              ),
+              const Divider(height: 1),
               Row( 
               children: <Widget>[
                 Container(
@@ -43,6 +65,7 @@ class PesoAlturaIMC extends StatelessWidget {
                   alignment: Alignment.center,
                   child: const Text("IMC", style: TextStyle(color: Colors.white, fontSize: 18)),
                 ),
+                
               ],
             ),
             const Divider(height: 1,),
@@ -75,6 +98,7 @@ class PesoAlturaIMC extends StatelessWidget {
           ),
         ],
       ),
+      ],),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.grey.shade200,
