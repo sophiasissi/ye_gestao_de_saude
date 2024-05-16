@@ -36,7 +36,7 @@ class _TelaHistoricoDeExamesState extends State<TelaHistoricoDeExames> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Histórico de Exames'),
+        title: const Text('Histórico de Exames'),
       ),
       body: Column(
         children: [

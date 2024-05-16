@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:ye_gestao_de_saude/_core/my_colors.dart';
+import 'package:ye_gestao_de_saude/authentication/screens/auth_screen.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -11,38 +13,33 @@ void main() async {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
-  static const Color greenColor = Color(0xFF749488);
 
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'YE Gestão de Saúde',
+      debugShowCheckedModeBanner: false,
+      title: 'YE Gestão de Saúde',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         ),
-        home: const Scaffold(
-          body: LoginScreen(),
-        ),
+        home: const AuthScreen(),
+          // body: LoginScreen(),
     );
-  }
-}
-
-class ButtonActive extends StatelessWidget {
-  const ButtonActive({super.key, required this.enabled});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
   }
 }
 
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -50,12 +47,13 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController _loginController = TextEditingController();
+
   bool get isLoginEmpty => _loginController.text.isEmpty;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: MyApp.greenColor,
+      color: MyColors.colorTheme,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -103,10 +101,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      ElevatedButton(onPressed: isLoginEmpty ? null : () {}, child: const Text('Entrar'),
+                      ElevatedButton(onPressed: isLoginEmpty ? null : () {},
+                        child: const Text('Entrar'),
                       ),
                       const SizedBox(width: 10),
-                      ElevatedButton(onPressed: () {}, child: const Text('Criar Conta'),
+                      ElevatedButton(
+                        onPressed: () {}, child: const Text('Criar Conta'),
                       ),
                     ],
                   )
@@ -118,5 +118,4 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
-  
-
+}
