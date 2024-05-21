@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:ye_gestao_de_saude/_comum/cores.dart';
+import 'package:ye_gestao_de_saude/_core/my_colors.dart';
 
 class PesoAlturaIMC extends StatelessWidget {
   const PesoAlturaIMC({super.key});
@@ -14,7 +14,7 @@ class PesoAlturaIMC extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 25),
         ),
         centerTitle: true,
-        backgroundColor: CoresPrincipais.corTema,
+        backgroundColor: MyColors.colorTheme,
       ),
       body:ListView(children: [
       Column(
@@ -30,14 +30,14 @@ class PesoAlturaIMC extends StatelessWidget {
                       height: 40, 
                       color: Colors.white,
                       alignment: Alignment.centerLeft,
-                      child: const Text("Data: 16/07/2020", style: TextStyle(color: CoresPrincipais.corTema, fontSize: 20, ),textAlign: TextAlign.start,)
+                      child: const Text("Data: 16/07/2020", style: TextStyle(color: MyColors.colorTheme, fontSize: 20, ),textAlign: TextAlign.start,)
                       ),
                       Container(
                           margin: const EdgeInsets.fromLTRB(0, 0, 30, 0),
                           alignment: Alignment.centerRight,
                           child: const Icon(
                             Icons.keyboard_arrow_down,
-                            color: CoresPrincipais.corTema,
+                            color: MyColors.colorTheme,
                           )),
                 ],
               ),
@@ -76,12 +76,12 @@ class PesoAlturaIMC extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 3, 
                   color: Colors.grey.shade200,
                   alignment: Alignment.center,
-                  child: const Text("100", style: TextStyle(color: CoresPrincipais.corTema, fontSize: 18)),
+                  child: const Text("100", style: TextStyle(color: MyColors.colorTheme, fontSize: 18)),
                 ),
                 Container(
                   height: 60,
                   width: MediaQuery.of(context).size.width / 3, 
-                  color: CoresPrincipais.corTema,
+                  color: MyColors.colorTheme,
                   alignment: Alignment.center,
                   child: const Text("1,76", style: TextStyle(color: Colors.white, fontSize: 18)),
                 ),
@@ -90,7 +90,7 @@ class PesoAlturaIMC extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 3, 
                   color: Colors.grey.shade200,
                   alignment: Alignment.center,
-                  child: const Text("32.3\nObesidade", style: TextStyle(color: CoresPrincipais.corTema, fontSize: 18), textAlign: TextAlign.center,),
+                  child: const Text("32.3\nObesidade", style: TextStyle(color: MyColors.colorTheme, fontSize: 18), textAlign: TextAlign.center,),
                 ),
               ],
             ),
@@ -103,7 +103,7 @@ class PesoAlturaIMC extends StatelessWidget {
         onPressed: () {},
         backgroundColor: Colors.grey.shade200,
         splashColor: Colors.green.shade100,
-        child: const Icon(Icons.add, color: CoresPrincipais.corTema),
+        child: const Icon(Icons.add, color: MyColors.colorTheme),
       ),
     );
   }
