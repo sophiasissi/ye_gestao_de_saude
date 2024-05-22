@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ye_gestao_de_saude/_comum/cores.dart';
 import 'package:ye_gestao_de_saude/_core/my_colors.dart';
 
 class Glicemia extends StatelessWidget {
@@ -28,12 +27,12 @@ class Glicemia extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 3, 
                   color: Colors.grey.shade200,
                   alignment: Alignment.center,
-                  child: const Text("05/07/2020", style: TextStyle(color: CoresPrincipais.corTema, fontSize: 18)),
+                  child: const Text("05/07/2020", style: TextStyle(color: MyColors.colorTheme, fontSize: 18)),
                 ),
                 Container(
                   height: 60,
                   width: MediaQuery.of(context).size.width / 3, 
-                  color: CoresPrincipais.corTema,
+                  color: MyColors.colorTheme,
                   alignment: Alignment.center,
                   child: const Text("85", style: TextStyle(color: Colors.white, fontSize: 18)),
                 ),
@@ -42,7 +41,7 @@ class Glicemia extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 3, 
                   color: Colors.grey.shade200,
                   alignment: Alignment.center,
-                  child: const Text("Normal", style: TextStyle(color: CoresPrincipais.corTema, fontSize: 18)),
+                  child: const Text("Normal", style: TextStyle(color: MyColors.colorTheme, fontSize: 18)),
                 ),
               ],
             ),
@@ -54,12 +53,12 @@ class Glicemia extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 3, 
                   color: Colors.grey.shade200,
                   alignment: Alignment.center,
-                  child: const Text("06/07/2020", style: TextStyle(color: CoresPrincipais.corTema, fontSize: 18)),
+                  child: const Text("06/07/2020", style: TextStyle(color: MyColors.colorTheme, fontSize: 18)),
                 ),
                 Container(
                   height: 60,
                   width: MediaQuery.of(context).size.width / 3, 
-                  color: CoresPrincipais.corTema,
+                  color: MyColors.colorTheme,
                   alignment: Alignment.center,
                   child: const Text("150", style: TextStyle(color: Colors.white, fontSize: 18)),
                 ),
@@ -68,7 +67,7 @@ class Glicemia extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 3, 
                   color: Colors.grey.shade200,
                   alignment: Alignment.center,
-                  child: const Text("Alta", style: TextStyle(color: CoresPrincipais.corTema, fontSize: 18)),
+                  child: const Text("Alta", style: TextStyle(color: MyColors.colorTheme, fontSize: 18)),
                 ),
               ],
             ),
@@ -80,12 +79,12 @@ class Glicemia extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 3, 
                   color: Colors.grey.shade200,
                   alignment: Alignment.center,
-                  child: const Text("07/07/2020", style: TextStyle(color: CoresPrincipais.corTema, fontSize: 18)),
+                  child: const Text("07/07/2020", style: TextStyle(color: MyColors.colorTheme, fontSize: 18)),
                 ),
                 Container(
                   height: 60,
                   width: MediaQuery.of(context).size.width / 3, 
-                  color: CoresPrincipais.corTema,
+                  color: MyColors.colorTheme,
                   alignment: Alignment.center,
                   child: const Text("100", style: TextStyle(color: Colors.white, fontSize: 18)),
                 ),
@@ -94,7 +93,7 @@ class Glicemia extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 3, 
                   color: Colors.grey.shade200,
                   alignment: Alignment.center,
-                  child: const Text("Normal", style: TextStyle(color: CoresPrincipais.corTema, fontSize: 18)),
+                  child: const Text("Normal", style: TextStyle(color: MyColors.colorTheme, fontSize: 18)),
                 ),
               ],
             ),
@@ -107,7 +106,7 @@ class Glicemia extends StatelessWidget {
         onPressed: () {},
         backgroundColor: Colors.grey.shade200,
         splashColor: Colors.green.shade100,
-        child: const Icon(Icons.add, color: CoresPrincipais.corTema),
+        child: const Icon(Icons.add, color: MyColors.colorTheme),
       ),
     );
   }

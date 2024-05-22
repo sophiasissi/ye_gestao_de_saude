@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:ye_gestao_de_saude/_core/my_colors.dart';
 import 'package:ye_gestao_de_saude/screens/login_screen.dart';
 import 'firebase_options.dart';
+//import 'package:firebase_database/firebase_database.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

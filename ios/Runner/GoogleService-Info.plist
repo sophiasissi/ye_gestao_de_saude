@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyAVq5m9mY1OgfaY4JMiZ8tkw2sN5P5-uV0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>321911589174</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.yeGestaoDeSaude</string>
+	<key>PROJECT_ID</key>
+	<string>banco-de-dados-gestao-saude</string>
+	<key>STORAGE_BUCKET</key>
+	<string>banco-de-dados-gestao-saude.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:321911589174:ios:f472dd972ea655798d8b97</string>
+</dict>
+</plist>
