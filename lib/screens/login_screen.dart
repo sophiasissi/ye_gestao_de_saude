@@ -1,8 +1,7 @@
-import 'dart:ui';
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:ye_gestao_de_saude/_core/my_colors.dart';
+import 'forgot_password_screen.dart';
 
 class AuthScreen extends StatefulWidget {
   const AuthScreen({super.key});
@@ -94,37 +93,55 @@ class _AuthScreenState extends State<AuthScreen> {
                     },
                   ),
                   Visibility(
-                      visible: !isEntrando,
-                      child: Column(
-                        children: [
-                          TextFormField(
-                            controller: _confirmaController,
-                            obscureText: true,
-                            decoration: const InputDecoration(
-                                labelText: "Confirme a senha"),
-                            validator: (value) {
-                              if (value == null || value.length < 4) {
-                                return "Insira uma confirmação de senha válida.";
-                              }
-                              if (value != _senhaController.text) {
-                                return "As senhas devem ser iguais.";
-                              }
-                              return null;
-                            },
+                    visible: !isEntrando,
+                    child: Column(
+                      children: [
+                        TextFormField(
+                          controller: _confirmaController,
+                          obscureText: true,
+                          decoration: const InputDecoration(
+                              labelText: "Confirme a senha"),
+                          validator: (value) {
+                            if (value == null || value.length < 4) {
+                              return "Insira uma confirmação de senha válida.";
+                            }
+                            if (value != _senhaController.text) {
+                              return "As senhas devem ser iguais.";
+                            }
+                            return null;
+                          },
+                        ),
+                        TextFormField(
+                          controller: _nomeController,
+                          decoration: const InputDecoration(labelText: "Nome"),
+                          validator: (value) {
+                            if (value == null || value.length < 3) {
+                              return "Insira um nome maior.";
+                            }
+                            return null;
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                  if (isEntrando)
+                    TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const ForgotPasswordScreen(),
                           ),
-                          TextFormField(
-                            controller: _nomeController,
-                            decoration:
-                                const InputDecoration(labelText: "Nome"),
-                            validator: (value) {
-                              if (value == null || value.length < 3) {
-                                return "Insira um nome maior.";
-                              }
-                              return null;
-                            },
-                          ),
-                        ],
-                      )),
+                        );
+                      },
+                      child: const Text(
+                        'Esqueceu a senha?',
+                        style: TextStyle(
+                          color: Colors.blue[200],
+                          decoration: TextDecoration.underline,
+                        ),
+                      ),
+                    ),
                   const SizedBox(height: 16),
                   ElevatedButton(
                     onPressed: () {
@@ -153,7 +170,7 @@ class _AuthScreenState extends State<AuthScreen> {
                           fontWeight: FontWeight.bold,
                           decoration: TextDecoration.underline),
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
