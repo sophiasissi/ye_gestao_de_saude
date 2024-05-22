@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:ye_gestao_de_saude/_core/my_colors.dart';
-import 'package:ye_gestao_de_saude/authentication/screens/auth_screen.dart';
+import 'package:ye_gestao_de_saude/screens/login_screen.dart';
 import 'firebase_options.dart';
 
 void main() async {

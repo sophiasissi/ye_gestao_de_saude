@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ye_gestao_de_saude/_comum/cores.dart';
+import 'package:ye_gestao_de_saude/_core/my_colors.dart';
 
 class Glicemia extends StatelessWidget {
   const Glicemia({super.key});
@@ -13,7 +14,7 @@ class Glicemia extends StatelessWidget {
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 25),
         ),
         centerTitle: true,
-        backgroundColor: CoresPrincipais.corTema,
+        backgroundColor: MyColors.colorTheme,
       ),
       body: Column(
         children: [
