@@ -1,3 +1,14 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'com.google.gms:google-services:4.4.1'
+    }
+}
+
 plugins {
     id "com.android.application"
     // START: FlutterFire Configuration
@@ -68,8 +79,17 @@ flutter {
     source '../..'
 }
 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
 dependencies {
-    classpath 'com.google.gms:google-services:4.4.1'
+    implementation 'com.google.firebase:firebase-analytics:22.0.0'
+    implementation 'com.google.firebase:firebase-auth:23.0.0'
+    implementation 'com.google.firebase:firebase-firestore:25.0.0'
 }
 
 apply plugin: 'com.google.gms.google-services'
